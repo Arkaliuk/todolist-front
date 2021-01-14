@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>TodoList</title>
+</head>
+
+<body>
+
+    <div id="myDIV" class="header">
+        <div class="select">
+            <select name="todos" class="filter-todo">
+                <option value="all" class="targ">All</option>
+                <option value="completed" class="targ">Completed</option>
+                <option value="uncompleted" class="targ">Uncompleted</option>
+            </select>
+        </div>
+        <h2>My To Do List</h2>
+        <form name="todo-list">
+            <input type="text" name="title" id="myInput" placeholder="Title">
+            <input type="text" name="description" id="description" placeholder="Description">
+            <input type="date" name="dueDate" id="dueDate" placeholder="Due date">
+            <button type="submit" class="addBtn">Add</button>
+
+        </form>
+    </div>
+
+    <ul id="todolist">
+    </ul>
+    <script src="assets/js/todolist.js"></script>
+</body>
+
+</html>
